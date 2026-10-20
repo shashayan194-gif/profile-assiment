@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website" />
+  <title>Shayan | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">Shayan<span>Portfolio</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WELCOME TO MY WEBSITE</p>
+        <h1>I'm <span>Shayan</span><br />A Student & Future Web Developer</h1>
+        <p class="hero-text">I am learning web development and enjoy creating clean, useful, and responsive websites. This portfolio shares a little about me and my work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="social-note">Curious mind · Creative ideas · Always learning</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative profile card">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="avatar">S</div>
+          <p class="card-label">PERSONAL PORTFOLIO</p>
+          <h2>Shayan</h2>
+          <p>Student • Learner • Creator</p>
+          <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="float-badge badge-top">✦ Creative</div>
+        <div class="float-badge badge-bottom">✓ Responsive design</div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container about-grid">
+        <div><p class="eyebrow">GET TO KNOW ME</p><h2 class="section-title">About <span>Me</span></h2></div>
+        <div class="about-copy"><p>I am a student who is building new skills in technology and website development. I believe practice, curiosity, and patience are the keys to improving every day.</p><p>This website is my first portfolio project. It is designed to work on mobile phones, tablets, and computers.</p><a class="text-link" href="#contact">Let's connect <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <p class="eyebrow center">WHAT I'M LEARNING</p><h2 class="section-title center">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon orange">&lt;/&gt;</div><h3>HTML</h3><p>Creating the structure and content of web pages.</p><div class="skill-track"><span style="width:75%"></span></div><small>Learning in progress</small></article>
+        <article class="skill-card"><div class="skill-icon blue">✦</div><h3>CSS</h3><p>Styling pages with colors, layouts, and responsive design.</p><div class="skill-track"><span style="width:60%"></span></div><small>Learning in progress</small></article>
+        <article class="skill-card"><div class="skill-icon yellow">JS</div><h3>JavaScript</h3><p>Adding interactive features and useful behavior.</p><div class="skill-track"><span style="width:35%"></span></div><small>Just getting started</small></article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container"><p class="eyebrow center">A FEW EXAMPLES</p><h2 class="section-title center">My <span>Projects</span></h2>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-visual visual-one"><span>01</span><div class="mock-window"><i></i><i></i><i></i><b>My First Webpage</b></div></div><div class="project-content"><p class="project-type">HTML · CSS</p><h3>First Webpage</h3><p>A simple page built to practice web design fundamentals.</p></div></article>
+          <article class="project-card"><div class="project-visual visual-two"><span>02</span><div class="mock-window mock-two"><i></i><i></i><i></i><b>Creative Ideas</b></div></div><div class="project-content"><p class="project-type">RESPONSIVE DESIGN</p><h3>Creative Landing Page</h3><p>A modern layout that adapts to different screen sizes.</p></div></article>
+          <article class="project-card"><div class="project-visual visual-three"><span>03</span><div class="mock-window mock-three"><i></i><i></i><i></i><b>Task Tracker</b></div></div><div class="project-content"><p class="project-type">JAVASCRIPT</p><h3>Task Tracker Concept</h3><p>A project idea for practicing interactive web features.</p></div></article>
+        </div>
+        <p class="project-disclaimer">Note: These are sample project cards. Replace them with your own work as you create it.</p>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-panel"><div><p class="eyebrow">HAVE A QUESTION?</p><h2>Let's make something<br /><span>great together.</span></h2><p>Feel free to contact me for learning, collaboration, or project ideas.</p></div>
+        <div class="contact-details"><a href="mailto:shashayan194@gmail.com">✉ shashayan194@gmail.com</a><p>⌖ Your City, Pakistan</p><button class="button primary" id="emailButton">Say Hello</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">Shayan<span>Portfolio</span></a><p>Made with care while learning web development.</p><p>© <span id="year"></span> Shayan</p></div></footer>
+</body>
+</html>
